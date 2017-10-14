@@ -39,3 +39,9 @@ console.log("데이터 타입은? "+typeof strTest +"data: "+ strTest);
 console.log(strTest.charAt(1));
 console.log(strTest.length);
 console.log(strTest.substr(1));
+
+function testFunc(str:string, num:number) : void{
+    console.log("str = "+str);
+    console.log("num = "+num);
+}
+
