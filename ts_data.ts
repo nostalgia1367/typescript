@@ -45,3 +45,35 @@ function testFunc(str:string, num:number) : void{
     console.log("num = "+num);
 }
 
+function throwError():never{
+    throw new Error("nonono");
+}
+
+interface testIter{
+    str : string,
+    num : number
+}
+let ajaxUtil = function(ti:testIter):void{
+    let str:string = "this_str";
+    let num:number = 3;
+    this.print = function():void{
+        console.log(ti.str);
+        console.log(ti.num);
+    }
+}
+
+var test1 = {str:"홍길동",  num:30}
+var au = new ajaxUtil(test1);
+au.print();
+
+class Car{
+    carName : string;
+    constructor(public pCarName:string){
+        this.carName = pCarName;
+    }
+}
+
+let hyundai = new Car("Sonata");
+let pStr:string ="hyundai차동차 중 제 차는? "+hyundai.carName;
+pStr += hyundai.carName;
+console.log(pStr);

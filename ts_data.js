@@ -16,10 +16,9 @@ anyTest = 3;
 anyTest = true;
 anyTest = new Number(3);
 var anyArr = [1, 2, true];
-function setUser(name) {
-    return name;
+function setUser() {
+    return "abc";
 }
-console.log(setUser('더조은'));
 function testObject() {
     return "abc";
 }
@@ -28,4 +27,35 @@ console.log("데이터 타입은? " + typeof strTest + "data: " + strTest);
 console.log(strTest.charAt(1));
 console.log(strTest.length);
 console.log(strTest.substr(1));
+function testFunc(str, num) {
+    console.log("str = " + str);
+    console.log("num = " + num);
+}
+function throwError() {
+    throw new Error("nonono");
+}
+var ajaxUtil = function (ti) {
+    var str = "this_str";
+    var num = 3;
+    this.print = function () {
+        console.log(ti.str);
+        console.log(ti.num);
+    };
+};
+var test1 = { str: "홍길동", num: 30 };
+var au = new ajaxUtil(test1);
+au.print();
+var Car = /** @class */ (function () {
+    function Car() {
+    }
+    Car.prototype.Car = function () {
+        console.log("1111111111111111");
+    };
+    return Car;
+}());
+//let hyundai = new Car("Sonata");
+var h2 = new Car();
+//let pStr:string ="hyundai차동차 중 제 차는? "+hyundai.carName;
+//pStr += hyundai.carName;
+//console.log(pStr);
 //# sourceMappingURL=ts_data.js.map
