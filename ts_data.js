@@ -46,16 +46,15 @@ var test1 = { str: "홍길동", num: 30 };
 var au = new ajaxUtil(test1);
 au.print();
 var Car = /** @class */ (function () {
-    function Car() {
+    function Car(pCarName) {
+        this.pCarName = pCarName;
+        this.carName = pCarName;
     }
-    Car.prototype.Car = function () {
-        console.log("1111111111111111");
-    };
     return Car;
 }());
-//let hyundai = new Car("Sonata");
-var h2 = new Car();
-//let pStr:string ="hyundai차동차 중 제 차는? "+hyundai.carName;
-//pStr += hyundai.carName;
-//console.log(pStr);
+var hyundai = new Car("Sonata");
+var pStr = "hyundai차동차 중 제 차는? " + hyundai.carName;
+pStr += hyundai.carName;
+console.log(pStr);
+console.log(pStr);
 //# sourceMappingURL=ts_data.js.map
