@@ -1,8 +1,20 @@
+/* Ctrl + Shift + B 로 수동 tsc 컴파일 진행하는 경우 세팅*/
+// {
+//     "version": "0.1.0",
+//     "command": "tsc",
+//     "isShellCommand": true,
+//     "args": ["-p", "."],
+//     "showOutput": "silent",
+//     "problemMatcher": "$tsc"
+// }
+
+/* Ctrl + S 로 저장만하는 순간 자동 tsc 컴파일이 진행되는 경우 세팅 */
 {
     "version": "0.1.0",
     "command": "tsc",
     "isShellCommand": true,
-    "args": ["-p", "."],
-    "showOutput": "silent",
-    "problemMatcher": "$tsc"
-}
+    "args": ["-w", "-p", "."],
+    "showOutput": "always",
+    "isBackground": true,
+    "problemMatcher": "$tsc-watch"
+  }

@@ -1,18 +1,15 @@
-var Developer = /** @class */ (function () {
-    function Developer() {
-    }
-    Developer.prototype.goForWork = function () {
+class Developer {
+    goForWork() {
         console.log("일하러 가자");
-    };
-    Developer.prototype.doWorking = function () {
+    }
+    doWorking() {
         console.log("일 중");
-    };
-    Developer.prototype.goOut = function () {
+    }
+    goOut() {
         console.log("퇴근 중");
-    };
-    return Developer;
-}());
-var dev = new Developer();
+    }
+}
+let dev = new Developer();
 dev.goForWork();
 dev.doWorking();
 dev.goOut();

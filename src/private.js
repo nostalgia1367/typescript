@@ -1,15 +1,12 @@
-var UserDTO = /** @class */ (function () {
-    function UserDTO() {
-    }
-    UserDTO.prototype.setName = function (name) {
+class UserDTO {
+    setName(name) {
         this.name = name;
-    };
-    UserDTO.prototype.getName = function () {
+    }
+    getName() {
         return this.name;
-    };
-    return UserDTO;
-}());
-var hong = new UserDTO();
+    }
+}
+let hong = new UserDTO();
 // 접근제어자가 private 이기때문에 안됨..
 //hong.name = "abc";
 hong.address = "서울";
