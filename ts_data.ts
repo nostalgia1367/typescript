@@ -12,7 +12,7 @@ let numArr : Array<number> = [3,4,5];
 console.log("ts_num1"+ts_num1+",ts_num2: "+ts_num2);
 console.log(ts_str);
 console.log(ts_str2);
-console.log(numArr);
+console.log(numArr+"");
 
 let tp : [string, number] ;
 tp = ["string1",2];
